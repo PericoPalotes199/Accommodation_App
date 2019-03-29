@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Zedland Student Accommodation</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="hotelmap.css">
+
+	<link rel="stylesheet" href="themes/gio.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<script src="themes-roll.js"></script>
+	<script src="hotelmap.js"></script>
+	<script src="addhotel.js"></script>
+	<script src="gethotel.js"></script>
+</head>
+
+<body>
+	<div data-role="panel" id="navpanel" data-display="overlay" data-position-fixed="true" data-theme="b">
+
+		<ul data-role="listview" id="extranav" data-theme="b">
+			<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-right" data-transition="slidedown">Home</a></li>
+			<li><a href="#" data-transition="slidefade">Loans</a></li>
+			<li><a href="favourites.html" data-transition="slidefade">Favourites</a></li>
+		</ul>
+	</div>
+
+	<div data-role="page" id="favourites" data-theme="b">
+
+		<div role="banner" data-role="header" data-position="fixed">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+
+			<h1>Zedland<br/> Student Accommodation </h1>
+			<a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-right ui-btn-icon-notext" data-transition="flip">Home</a>
+		</div>
+
+		<!----CONTENT-SECTION -------->
+
+		<div data-role="content">
+			<h2>Favourites</h2>
+			<div id="hotel"></div>
+			<div id="nostorage"></div>
+		</div>
+
+		<!--
+		<a href="favourites.html" class="ui-btn" id="addbtnremove"> REMOVE</a>
+		<div id="nostorage"></div>
+-->
+		<button href="#" id="revomeButton" class="ui-btn" id="addbtnremove">REMOVE</button>
+		<div id="nostorage"></div>
+
+
+
+	</div>
+
+
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-id="footernav">
+			<ul>
+				<div data-role="footer" data-position="fixed">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="about.html" data-icon="info" data-iconpos="top">About</a></li>
+
+							<li><a href="login.html" data-prefetch data-icon="phone" data-iconpos="top">Contact</a></li>
+
+							<li><a href="login.html" data-prefetch data-icon="grid" data-iconpos="top">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+</body>
+
+
+</html>

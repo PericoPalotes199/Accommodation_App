@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Zedland Student Accommodation</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="hotelmap.css">
+
+	<link rel="stylesheet" href="themes/gio.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<script src="themes-roll.js"></script>
+	<script src="hotelmap.js"></script>
+	<script src="addhotel.js"></script>
+	<script src="gethotel.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page" id="home" data-theme="b">
+
+		<div role="banner" data-role="header" data-position="fixed" data-theme="b">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+			<a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-right ui-btn-icon-notext" data-transition="flip">Home</a>
+			<h1>Zedland
+			<br/> Student Accommodation </h1>
+
+		</div>
+
+		<div data-role="content">
+			<h2>Register Form</h2>
+			<form method="post" action="#" id="frm1">
+
+
+
+
+				<label for="student" class="ui-hidden-accessible">number</label>
+				<input type="number" name="Student" id="studentNumber" placeholder="Student Number" required>
+
+
+				<label for="name" class="ui-hidden-accessible">name:</label>
+				<input type="text" name="Name" id="name" placeholder="Name" required>
+
+				<label for="username" class="ui-hidden-accessible">Username:</label>
+				<input type="text" name="userName" id="username" placeholder="Username" required>
+
+
+
+				<label for="date" class="ui-hidden-accessible">date</label>
+				<input type="date" name="date" id="dateText" placeholder="date" required>
+
+
+				<select name="select-choice-a" id="requiredSections" data-native-menu="false">
+
+					<option>Programme List
+						<option>
+
+							<option value="standard">Computing </option>
+							<option value="rush">Marketing</option>
+							<option value="express">Law</option>
+							<option value="overnight">Accounting </option>
+				</select>
+				<fieldset data-role="controlgroup">
+
+
+
+					<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+					<label for="radio-choice-1">House</label>
+
+					<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+					<label for="radio-choice-2">Flat</label>
+
+					<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3">
+					<label for="radio-choice-3">Studio</label>
+
+					<input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4">
+					<label for="radio-choice-4">Room</label>
+				</fieldset>
+
+
+				<input type="submit" value="Submit" class="ui-btn ui-corner-all">
+
+
+
+			</form>
+		</div>
+
+	</div>
+
+
+
+
+</body>
+
+</html>

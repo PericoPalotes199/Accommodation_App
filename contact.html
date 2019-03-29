@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Zedland Student Accommodation</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="hotelmap.css">
+
+
+	<link rel="stylesheet" href="themes/gio.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+
+
+
+
+	<script src="httpS://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="httpS://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<script src="themes-roll.js"></script>
+	<script src="hotelmap.js"></script>
+	<script src="addhotel.js"></script>
+	<script src="gethotel.js"></script>
+</head>
+
+<body>
+
+
+	<!--
+	<div data-role="panel" id="mainNavigationPanel " data-display="overlay" data-position-fixed="true" data-theme="a">
+
+				list manu  inside  Burguer menu    
+		<ul data-role="listview" id="secondNav" data-theme="a">
+			<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-right" data-transition="slidedown">Home</a></li>
+			<li><a href="#" data-transition="slidefade">Loans</a></li>
+			<li><a href="favourites.html" data-transition="slidefade">Favourites</a></li>
+		</ul>
+	</div>
+-->
+
+	<div data-role="page" id="home" data-theme="b">
+
+		<div role="banner" data-role="header" data-position="fixed">
+			<!--	button back code 	-->
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+			<a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-right ui-btn-icon-notext" data-transition="flip">Home</a>
+			<h1>Zedland
+			<br/>Student Accommodation </h1>
+
+		</div>
+
+		<div data-role="content">
+			<h2>Contact</h2>
+			<h3>Zedland</h3>
+
+
+			<div data-role="collapsible" data-collapsed="false" data-theme="b">
+				<h3> phone </h3>
+				<div>
+
+					<!--	 Phone and e-mail  icons -->
+
+					<a href="tel:+7447907087" class="ui-btn ui-icon-phone ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></a>
+
+
+					<a href="mailto:giocardenas2@icloud.com" class="ui-btn ui-icon-mail ui-btn-icon-left ui-corner-all ui-btn-icon-notext"></a>
+
+
+
+					<!--<a href="index.html" data-role="button" data-theme="">Swatch e</a>-->
+
+				</div>
+
+			</div>
+			<!-- Adress section -->
+			<div id="address">
+				<p> Soho 12
+					<br>London
+					<br>RS 7HX</p>
+			</div>
+
+		</div>
+
+		<div>
+			<p id="followUS"> Follow us</p>
+		</div>
+
+		<!--		Social Media Funcitionalities-->
+
+		<div data-role="popup" id="sharepopup" data-theme="b" data-dismissible="false" data-history="false" data-position-to="window">
+			<div data-role="header">
+				<h1>Share</h1>
+			</div>
+			<div data-role="content">
+				<a href="#" data-role="button" data-rel="back">Share<span id="sharechannel"></span></a>
+				<a href="#" data-role="button" data-rel="back">Cancel</a>
+			</div>
+		</div>
+
+
+
+		<a href="#sharepopup" id="sharelinks" data-rel="popup"> <img src="images/facebook.png" id="facebook" class="shareimage" alt="Share on Facebook">
+			<img href="#" src="images/twitter.png" id="twitter" class="shareimage" alt="Share on Twitter">
+			<img src="images/linkedin.png" id="linkedin" class="shareimage" alt="Share on LinkedIn"> </a>
+
+		<!--			 End Social Media -->
+
+		<!-- Footer Section-->
+
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<ul>
+					<div data-role="footer" data-position="fixed">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="about.html" data-icon="info" data-iconpos="top">About</a></li>
+
+								<li><a href="login.html" data-prefetch data-icon="phone" data-iconpos="top">Contact</a></li>
+
+								<li><a href="login.html" data-prefetch data-icon="grid" data-iconpos="top">Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</body>
+
+</html>

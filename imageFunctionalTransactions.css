@@ -1,0 +1,84 @@
+/* Basic Reset */
+
+* {
+	font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #33322f;
+	overflow-x: hidden;
+}
+
+/* Gallery */
+
+.gallery {
+	position: relative;
+	width: 700px;
+	height: 306px;
+	margin: auto;
+	overflow: hidden;
+	list-style: none;
+}
+.gallery img {
+	display: block;
+	float: left;
+}
+.gallery ul {
+	list-style: none;
+}
+.gallery ul li.each {
+	position: relative;
+	float: left;
+	transition: all .8s;
+}
+.gallery ul li.each,
+.gallery ul li.each img {
+	height: 0px;
+}
+.gallery ul li.each img {
+	opacity: 0.5;
+	transition: all .4s;
+}
+.gallery ul li.each.active,
+.gallery ul li.each.active img {
+	height: 306px;
+}
+.gallery ul li.each.active img {
+	opacity: 1;
+}
+.gallery .caption {
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	right: 20px;
+	text-transform: uppercase;
+}
+.gallery .caption h2,
+.gallery .caption p {
+	background: #fff000;
+	padding: 7px;
+	box-shadow: 0 0 20px #000;
+}
+.gallery .caption h2 {
+	font: 24px "Lato", sans-serif;
+	float: left;
+}
+.gallery .caption p {
+	font: 18px "Lato", sans-serif;
+	float: left;
+	clear: both;
+}
+
+/* Direction */
+
+.direction .next {
+	color: black;
+	position: absolute;
+	top: 130px;
+	left: 355px;
+	color: black;
+	font: 40px "Lato", sans-serif;
+	transform: rotate(-45deg);
+	cursor: pointer;
+}

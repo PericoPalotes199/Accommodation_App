@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Zedland Student Accommodation</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="hotelmap.css">
+
+	<link rel="stylesheet" href="themes/gio.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<script src="themes-roll.js"></script>
+	<script src="hotelmap.js"></script>
+	<script src="addhotel.js"></script>
+	<script src="gethotel.js"></script>
+</head>
+
+
+
+<body>
+	<div data-role="panel" id="mainNavegationPanel" data-display="overlay" data-position-fixed="true">
+
+		<ul data-role="listview" id="secondNav" data-theme="b">
+
+			<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-right" data-transition="flip">Home</a></li>
+			<li><a href="#" data-transition="flip">Loans</a></li>
+			<li><a href="favourites.html" data-transition="flip">Favourites</a></li>
+		</ul>
+
+	</div>
+	<div data-role="page" id="home" data-theme="b">
+		<div role="banner" data-role="header">
+
+			<h1>Zedland<br/> Student Accommodation</h1>
+			<a href="#mainNavegationPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-right"></a>
+		</div>
+
+		<div data-role="content" class="ui-content">
+			<h2>Search Form </h2>
+
+			<div data-role="collapsible-set">
+				<!-- first list Item  with 3 options -->
+				<div data-role="collapsible">
+					<h3>Accommodation Options </h3>
+					<fieldset data-role="control">
+
+						<input type="checkbox" name="room" id="room">
+						<label for="room">Room</label>
+
+						<input type="checkbox" name="flat" id="flat">
+						<label for="flat">flat</label>
+
+						<input type="checkbox" name="studio" id="studio">
+						<label for="studio">studio</label>
+
+					</fieldset>
+				</div>
+				<!-- Second  list Item  with a slide bar  -->
+				<div data-role="collapsible">
+					<h3>Rent</h3>
+					<div data-role="rangeslider">
+						<label for="value">value</label>
+						<input name="range" id="range" min="30" max="1200" value="0" step="5" type="range" />
+
+						<input name="price_max_value" id="price_max_value" min="30" max="1200" value="1200" step="5" type="range" />
+					</div>
+				</div>
+				<!-- third  list Item  a slide bar "miles"-->
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Location</h3>
+					<div data-role="rangeslider">
+						<label for="distance">Miles</label>
+						<input name="distance" id="distance" min="1" max="50" value="1" type="range" />
+					</div>
+				</div>
+
+			</div>
+			<!-- submit button -->
+
+			<a href="result.html" data-role="button">submit</a>
+			<!--			<button onclick="window.location.href='results'" class="ui-btn ui-corner-all">Submit</button>-->
+
+			<!--			text    -->
+			<div id="mainText">
+				<p></p>The student living experience in London is like no other
+				<br> packed with opportunity and excitement.
+			</div>
+			<!--			FOOTER SECTION             -->
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar" data-id="footernav">
+					<ul>
+						<div data-role="footer" data-position="fixed">
+							<div data-role="navbar">
+								<ul>
+									<li><a href="about.html" data-icon="info" data-iconpos="top">About</a></li>
+									<li><a href="contact.html" data-prefetch data-icon="phone" data-iconpos="top">Contact</a></li>
+									<li><a href="login.html" data-prefetch data-icon="grid" data-iconpos="top">Login</a></li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-----------	 SECONDARY PAGE----=-->
+
+	<!--
+	<div data-role="page" id="results">
+		<div role="banner" data-role="header" data-position="fixed">
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+			<h1>Zedland<br/> Student Accommodation</h1>
+			<a href="#mainNavegationPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-right"></a>
+		</div>
+		<div>
+
+			<ul data-role="listview" id="searchBar" data-filter="true" data-inset="true" data-filter-placeholder="Search Hotels">
+
+		</div>
+-->
+
+	<!--			 FIRST <PROPETY>            -->
+
+	<!--
+
+		<div data-role="content" id="california">
+			<div data-role="header">
+				<h1>Zedland Hotels</h1>
+			</div>
+			<div data-role="content">
+				<img src="images/house.png" id="picture1" height="70" alt="Image">
+				<h2 id="hoteltitle"> California hotel</h2>
+				<ul>
+
+					<li> Edward state</li>
+					<li> 12 Acre Street</li>
+					<li>&pound;950</li>
+					<li>WIK 4TH</li>
+
+				</ul>
+				<a href="favourites.html" class="ui-btn" id="addbtn"> ADD Favourites</a>
+				<div id="nostorage"></div>
+				</li>
+			</div>
+		</div>
+-->
+
+
+
+
+	<!--
+		<div data-role="content">
+			<h2 id="hoteltitle"> Foxtont hotel</h2>
+			<ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
+
+				<img src="images/house.png" id="picture2" height="70" alt="Image">
+				<li> Edward state</li>
+				<li> 12 Acre Street</li>
+				<li>&pound;950</li>
+				<li>WIK 4TH</li>
+				<a href="favourites.html" class="ui-btn" id="addbtn"> ADD Favourites</a>
+				<div id="nostorage"></div>
+
+				</li>
+			</ul>
+
+		</div>
+-->
+
+
+
+	<!--
+
+		<div data-role="content">
+			<h2 id="hoteltitle"> New York</h2>
+			<ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
+
+
+				<img src="images/house.png" id="picture3" height="70" alt="Image">
+				<li> Edward state</li>
+				<li> 12 Acre Street</li>
+				<li>&pound;950</li>
+				<li>WIK 4TH</li>
+
+				<a href="favourites.html" class="ui-btn" id="addbtn"> ADD Favourites</a>
+				<div id="nostorage"></div>
+
+				</li>
+			</ul>
+
+		</div>
+
+
+		<div id="space">
+
+
+		</div>
+-->
+
+
+
+	<!--
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<ul>
+					<div data-role="footer" data-position="fixed">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="about.html" data-prefetch data-icon="phone" data-iconpos="top">About</a></li>
+
+								<li><a href="contact.html" data-prefetch data-icon="mail" data-iconpos="top">Contact</a></li>
+
+								<li><a href="login.html" data-prefetch data-icon="grid" data-iconpos="top">Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+-->
+
+</body>
+
+</html>

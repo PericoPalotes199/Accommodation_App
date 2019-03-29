@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Zedland Student Accommodation</title>
+	<!--	<link rel="stylesheet" type="text/css" href="madtma/hotelmap.css">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="themes/gio.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<script src="themes-roll.js"></script>
+	<script src="hotelmap.js"></script>
+	<script src="addhotel.js"></script>
+	<script src="gethotel.js"></script>
+</head>
+
+<body>
+
+	<div data-role="panel" id="MainNavePanel" data-display="overlay" data-position-fixed="true" data-theme="a">
+		<ul data-role="listview" id="secondNav" data-theme="a">
+			<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-right" data-transition="slidedown">Home</a></li>
+			<li><a href="index.html" data-transition="slidefade">Loans</a></li>
+			<li><a href="favourites.html" data-transition="slidefade">Favourites</a></li>
+		</ul>
+	</div>
+
+	<div data-role="page" id="home" data-theme="b">
+
+		<div role="banner" data-role="header" data-position="fixed">
+			<!--	button back code 	-->
+			<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+			<a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-right ui-btn-icon-notext" data-transition="flip">Home</a>
+			<h1>Zedland
+			<br/>Student Accommodation </h1>
+
+		</div>
+
+		<div data-role="content">
+			<h2>Login</h2>
+			<form method="post" action="login.html">
+				<div>
+					<label for="username" class="ui-hidden-accessible">Username:</label>
+					<input type="text" name="username" id="username" placeholder="Username" required>
+				</div>
+				<div>
+					<label for="password" class="ui-hidden-accessible">Password:</label>
+					<input type="password" data- theme="b" name="password" id="password" placeholder="Password" required>
+				</div>
+
+				<input type="submit" value="Submit" data-role="button" data-inline="true" />
+
+				<!--				<a href="register.html" data-transition="flip" data-prefetch data-role="button" type="submit" value="Submit Button" data-inline="true">Login</a>-->
+
+				<a href="register.html" data-transition="flip" data-prefetch data-role="button" data-inline="true">Register</a>
+
+
+
+			</form>
+
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar" data-id="footernav">
+					<ul>
+						<div data-role="footer" data-position="fixed">
+							<div data-role="navbar">
+								<ul>
+									<li><a href="about.html" data-icon="info" data-iconpos="top">About</a></li>
+
+									<li><a href="login.html" data-prefetch data-icon="phone" data-iconpos="top">Contact</a></li>
+
+									<li><a href="login.html" data-prefetch data-icon="grid" data-iconpos="top">Login</a></li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+</body>
+
+</html>
